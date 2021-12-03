@@ -17,7 +17,7 @@
 
 .title2 {
     display: block;
-    color: var(--text-purple);
+    color: var(--text-gold);
 }
 
 .subtitle {
@@ -33,7 +33,7 @@
 }
 
 .button {
-    background-color: var(--text-purple-dark);
+    background-color: var(--text-gold);
     cursor: pointer;
     color: white;
     outline: 0;
@@ -48,7 +48,7 @@
 }
 
 .button:hover {
-    background-color: var(--text-purple-dark);
+    background-color: var(--text-gold);
 }
 
 /**
