@@ -17,7 +17,7 @@
 
 .title2 {
     display: block;
-    color: var(--text-gold);
+    color: var(--text-coffee-light);
 }
 
 .subtitle {
@@ -48,7 +48,7 @@
 }
 
 .button:hover {
-    background-color: var(--text-gold);
+    background-color: var(--text-gold2);
 }
 
 /**
