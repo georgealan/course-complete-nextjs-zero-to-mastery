@@ -7,8 +7,8 @@ class MyDocument extends Document {
             <Html lang="en">
                 <Head>
                     <link
-                        rel="preconnect"
-                        href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap"
+                        rel="preload"
+                        href="/fonts/MarcellusSC-Regular.ttf"
                         as="font"
                         crossOrigin="anonymous"
                     ></link>
