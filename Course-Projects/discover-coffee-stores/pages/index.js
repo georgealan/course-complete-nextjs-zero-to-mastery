@@ -1,8 +1,13 @@
+/* eslint-disable react/jsx-key */
 /* eslint-disable jsx-a11y/alt-text */
 import Head from 'next/head'
 import Image from 'next/image'
 import Banner from '../components/banner'
+import Card from '../components/card'
+
 import styles from '../styles/Home.module.css'
+
+import coffeeStores from "../data/coffee-stores.json";
 
 export default function Home() {
 
@@ -23,6 +28,18 @@ export default function Home() {
 
         <div className={styles.heroImage}>
           <Image src="/static/hero-image.png" width={500} height={375}/>;
+        </div>
+
+        <div className={styles.cardLayout}>
+          {coffeeStores.map((coffeeStore) => {
+            return (
+              <Card 
+                name={coffeeStore.name}
+                imgUrl={coffeeStore.imgUrl}
+                href={`/coffee-store/${coffeeStore.id}`}
+              />    
+            );
+          })}
         </div>
       </main>
 

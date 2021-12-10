@@ -54,6 +54,19 @@ button:focus {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+/* glass-morphism */
+.glass {
+  background: hsla(0, 0%, 100%, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+}
+
+.glass:hover {
+  background: hsla(35, 40%, 70%, 0.5);
+  border: 1px solid #D5B890;
+}
+
 :root {
   --text-purple: rgba(67, 56, 202, 1);
   --text-purple-dark: rgba(79, 70, 229, 1);
