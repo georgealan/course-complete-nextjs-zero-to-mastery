@@ -12,9 +12,18 @@ import coffeeStoresData from "../data/coffee-stores.json";
 /** All code here is server side rendering, then this code only appear in server, 
     client ill not see any code here */
 export async function getStaticProps(context) {
+  console.log("Hi, getStatic");
+
+  /**
+  const response = await fetch('http://api.positionstack.com/v1/forward?access_key=e3302e0f85a1ee571fa1a42c8a95ed51&query=coffee store');
+
+  const data = await response.json();
+  console.log(data);
+ */
+
   return {
     props: {
-      coffeeStores: coffeeStoresData,
+      coffeeStores: data,
     },
   };
 }
